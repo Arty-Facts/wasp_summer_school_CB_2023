@@ -1,0 +1,1 @@
+jupyter notebook --no-browser --NotebookApp.allow_origin='*' --NotebookApp.token=''

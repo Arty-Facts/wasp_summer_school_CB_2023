@@ -60,6 +60,7 @@ def get_station_from_string(string):
         return Stations.CONVEYOR_LIGHT
     if 'DELIVERY' in string:
         return Stations.DELIVERY
+    print("ERROR, invalid station", string)
 
     return -1
 
@@ -77,7 +78,7 @@ def get_pos(station):
         return Pos(12, 3)
     if station == Stations.DELIVERY:
         return Pos(21, 7.5)
-    print("ERROR, invalid station")
+    # print("ERROR, invalid station")
     return Pos(0, 0)
 
 def move_towards(station, state):
